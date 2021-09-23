@@ -1,7 +1,7 @@
 FROM node:13-alpine
 LABEL maintainer="yankabashtyk16@gmail.com" \
       version="1.0" \
-      docker.cmd="docker run --rm -it -v $(pwd):/app yanabashtyk/stylelint"
+      docker.cmd="docker run --rm -it -v $(pwd):/app yanabashtyk/stylelint:13-alpine"
 
 # Add required stylelint packages
 RUN npm install -g stylelint stylelint-config-standard stylelint-order stylelint-config-rational-order \
